@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="../js/popup.js"></script>
+  <link rel="stylesheet" href="../css/Signinpop.css">
+</head>
+<body>
+  <div class="sign-up" style="background-color: white; display: inline-block;" >
+    <div class ="logo" style ="text-align: center">
+      <img src = "/image/Closet_logo1.png" style ="height : 80px">
+    </div>
+  <form class="SiginIn" style="text-align: center; height :100%">
+    <span style="margin-right: 75%;">ID</span><br>
+    <input type="text" class="inputtext" id="infoID" placeholder="Input ID" > 
+    <input type="button" class="btn btn--white" value="Confirm" onclick="IDcheck()"> <br><br>
+    <span style="margin-right: 75%; margin-top: 50px;">PW</span><br>
+    <input type="password" class="inputtext" id="infoPW" placeholder="Input PASSWORD""><br><br>
+    <span style="margin-right: 59%;">NICKNAME</span><br>
+    <input type="text" class="inputtext" id="infoNick" placeholder="Input NICKNAME">
+    <input type="button" class="btn btn--white" class="btn" value="Confirm" onclick="Nickcheck()"><br>
+    <input type="checkbox" class="checkbtn" name="sexual" value="남" onclick="opencheck(this)">Male
+    <input type="checkbox" class="checkbtn" name="sexual" value="여" onclick="opencheck(this)">Female <br>
+    <input  class ="sign" type="button" class="btn btn--white" class ="btn"  value="Register" onclick="infopush()" style="margin-top: 20px; margin-bottom: 20px;"> <br>
+  </form>
+  </div>
+</body>
+</html>
